@@ -1,0 +1,2 @@
+# Liver-fibrosis-staging-model
+This repository implements the Uncertainty-Guided Curriculum Learning (UGCL) framework for automated liver fibrosis staging.  UGCL progressively incorporates samples with higher prediction uncertainty during training, allowing the model to learn from easy to hard cases while maintaining stable optimization in early stages.
