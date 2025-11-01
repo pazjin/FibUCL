@@ -34,7 +34,7 @@ torch>=1.13.0,torchvision,pandas,numpy,nibabel,SimpleITK,Pillow,tqdm,totalsegmen
 ### 1️ Preprocessing (preprocess.py)
 #### Reads 3D liver .nii.gz images from input folder
 #### Performs automatic liver segmentation (TotalSegmentator)
-→ /output/tempt/processed/mask< br >
+→ /output/tempt/processed/mask
 
 #### Extracts & normalizes liver ROI
 ```bash
