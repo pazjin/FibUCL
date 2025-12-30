@@ -17,7 +17,7 @@ LiFS/
 │        └── model/                                          # Pretrained models:GED1,GED2,GED3,GED4
 │             ├── best_model_{phase}{Subtask}.pt
 │             └── best_attention_moe{Subtask}.pt
-```
+
 ## Repository Structure
 ### Clone the repo
 ```bash
