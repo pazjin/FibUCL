@@ -33,7 +33,27 @@ pip install -r requirements.txt
 - Python >= 3.8
 - PyTorch >= 1.10
 - CUDA >= 11.3 (for GPU inference)
-  
+
+## Dataset Preparation
+We follow the CARE-Liver LiFS dataset format.
+```css
+DATA_ROOT/
+├── Vendor_A/
+│       ├── patientid_A_{label}/
+│               ├── T1.nii.gz
+│               ├── T2.nii.gz
+│               ├── DWI_800.nii.gz
+│               ├── GED1.nii.gz
+│               ├── GED2.nii.gz
+│               ├── GED3.nii.gz
+│               └── GED4.nii.gz
+│       ├── patientid_A_{label}/
+|               └── ...
+├── Vendor_B/
+|      └── ...
+├── Label.csv
+'''
+
 ### Installation
 
 ```bash
@@ -44,10 +64,13 @@ pip install -r requirements.txt
 
 ## Pipeline Overview
 ### 1️ Preprocessing (preprocess.py)
-#### Reads 3D liver .nii.gz images from input folder
-#### Performs automatic liver segmentation (TotalSegmentator)
-→ /output/tempt/processed/mask
 
+#### Reads 3D liver .nii.gz images from input folder
+
+#### Performs automatic liver segmentation (TotalSegmentator)
+```bash
+/output/tempt/processed/mask
+```
 #### Extracts & normalizes liver ROI
 ```bash
 /output/tempt/processed/Processed_data_cut/Image.nii.gz
