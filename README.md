@@ -28,8 +28,19 @@ cd FibUCL
 ```bash
 pip install -r requirements.txt
 ```
-### Required packages include
-torch>=1.13.0,torchvision,pandas,numpy,nibabel,SimpleITK,Pillow,tqdm,totalsegmentator>=2.0,<3.0,nnunetv2==2.5.1
+## Environment
+
+- Python >= 3.8
+- PyTorch >= 1.10
+- CUDA >= 11.3 (for GPU inference)
+  
+### Installation
+
+```bash
+conda create -n fibucl python=3.8 -y
+conda activate fibucl
+pip install -r requirements.txt
+
 ## Pipeline Overview
 ### 1️ Preprocessing (preprocess.py)
 #### Reads 3D liver .nii.gz images from input folder
