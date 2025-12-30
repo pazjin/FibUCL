@@ -113,12 +113,10 @@ python main.py --input /path/to/liver_dataset --output /path/to/output --task Co
 ⚠️ Both tasks generate /output/LiFS_pred.csv; running the second task in the same output folder will overwrite the previous file.
 ## Citation
 ```bibtex
-@article{Jin2025FibUCL,
+@inproceedings{Jin2025FibUCL,
   title     = {Uncertainty-Guided Curriculum Learning for Automated Liver Fibrosis Staging on Heterogeneous MRI},
   author    = {Yuxin Jin and Fengjun Zhao and Yanrong Chen and Xuelei He},
-  affiliation = {Northwest University, Xi’an, China; The First Affiliated Hospital of Xi’an Jiaotong University, Xi’an, China},
-  year      = {2025},
-  note      = {⋆ Corresponding author: Xuelei He (xueleihe@nwu.edu.cn)},
-  url       = {https://github.com/pazjin/FibUCL}
+  booktitle = {Proceedings of the MICCAI 2025 Workshop on CARE-Liver},
+  year={2025}
 }
 ```
