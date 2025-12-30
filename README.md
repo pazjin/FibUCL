@@ -40,6 +40,7 @@ pip install -r requirements.txt
 conda create -n fibucl python=3.8 -y
 conda activate fibucl
 pip install -r requirements.txt
+```
 
 ## Pipeline Overview
 ### 1️ Preprocessing (preprocess.py)
